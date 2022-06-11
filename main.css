@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box; /*всем элементам прописали*/
+}
+
+
+body 
+{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.container 
+{ /* разместили контейнер для портфолио*/
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*header*/
+.header 
+{
+    position: relative;
+    display: flex; /* определяем модель флекс бокс для хедера*/
+    flex-direction: column;/*выстраиваем флекс элемент в колонку основная ось игрик*/
+    justify-content: center;/* выравнивание по основной оси*/
+    align-items: center;/* выравнивание по поперечной оси*/
+ 
+    width: 100%;
+    height: 100vh;
+
+    background-color:#556983;
+    background-image: url("img/header/header-bg.jpg");
+    background-size: cover; /*растягивается по всей ширине*/
+}
+
+.header-title 
+{
+    margin: 0;
+    margin-bottom: 25px;/* отвечает за отступ вниз*/
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 130%;/* 1.3 56= 72.8*/
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.header-subtitle 
+{
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    
+    text-align: center; 
+    letter-spacing: 0.2em; /* ростояние между букв чуть больше*/
+    text-transform: uppercase; /* перевод текса в верхний регистр*/
+    
+    color: #FFFFFF;
+}
+
+.header-arrow 
+{
+    width: 48px;
+    height: 48px;
+/*background-color: red;*//* contrl + /*/
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+}
+
+/*portfolio*/
+
+
+.portfolio 
+{
+    padding-top: 80px;
+    padding-bottom: 115px;
+
+}
+
+.portfolion-header 
+{
+    margin: 0;
+    margin-bottom: 70px;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+    text-align: center;
+    color: #000000;
+
+}
+
+.portfolio-cards-wrapper 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card 
+{
+    max-width: 540px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
+    background-color: #FFFFFF;
+    
+}
+.card:last-child, .card:nth-last-child(2) 
+{
+    margin-bottom: 0;
+}
+
+.card-img 
+{
+    margin-bottom: 20px;
+}
+
+.card-title 
+{
+    margin: 0;
+    margin-bottom: 13px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    color: #000000;
+}
+
+.card p 
+{
+    margin: 0;
+    font-size: 16px;
+    line-height: 130%;
+    color: #000000;
+}
+
+/*footer*/
+
+.footer
+{
+    background: #1E4776;
+    padding-bottom: 130px;
+    padding-top: 45px;
+    color: white;
+}
+
+.footer_row
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-col
+{
+    max-width: 350px;
+    flex-grow: 1;
+}
+
+.footer_copyright
+{
+    max-width: 350px;
+    flex-grow: 1;
+    color:#7E9EC9;
+    line-height: 1.3;
+    
+    
+}
+.footer_copyright_name
+{
+font-weight: 700;
+font-size: 28px;
+
+
+}
+
+.footer_copyright_name p 
+{
+font-style: 16px;
+font-weight: 600;
+
+}
+
+
+
+.footer_icons p
+{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1/3;
+
+}
+
+.footer_icons-row
+{
+display: flex;
+align-items: center;
+
+}
+
+.footer_icons-row > * + *
+{ 
+    margin-left: 30px;
+}
+
+
+.footer-button
+{
+    display: inline-block;
+    border: 3px solid #FFFFFF;
+    border-radius: 50px;
+    height: 50px;
+    color: #FFFFFF;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 44px;
+
+     font-weight: 700;
+    font-size: 16px;
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+
+}
+
+.footer-contacts p 
+{
+    margin: 15PX 0;
+    font-size: 16px;
+    line-height: 1.3;
+    
+    color: #7E9EC9;
+
+}
